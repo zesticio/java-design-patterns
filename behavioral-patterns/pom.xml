@@ -9,12 +9,20 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>miscellaneous</artifactId>
+    <artifactId>behavioral-patterns</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>dao</module>
-        <module>dependency-injection</module>
-        <module>mvn</module>
+        <module>templatemethod</module>
+        <module>mediator</module>
+        <module>chain-of-responsibility</module>
+        <module>observer</module>
+        <module>strategy</module>
+        <module>command</module>
+        <module>state</module>
+        <module>visitor</module>
+        <module>interpreter</module>
+        <module>iterator</module>
+        <module>momento</module>
     </modules>
 
     <properties>

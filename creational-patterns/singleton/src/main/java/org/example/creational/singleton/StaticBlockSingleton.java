@@ -1,0 +1,26 @@
+package org.example.creational.singleton;
+
+/**
+ * Similar to initialized singleton, the object is created at the time of class loading.
+ * The only difference is that here you have an option for exception handling.
+ */
+public class StaticBlockSingleton {
+
+  private static StaticBlockSingleton instance;
+
+  private StaticBlockSingleton() {
+  }
+
+  // static block initialization for exception handling
+  static {
+    try {
+      instance = new StaticBlockSingleton();
+    } catch (Exception e) {
+      throw new RuntimeException("Exception occurred in creating singleton instance");
+    }
+  }
+
+  public static StaticBlockSingleton getInstance() {
+    return instance;
+  }
+}

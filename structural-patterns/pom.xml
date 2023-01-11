@@ -9,12 +9,16 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>miscellaneous</artifactId>
+    <artifactId>structural-patterns</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>dao</module>
-        <module>dependency-injection</module>
-        <module>mvn</module>
+        <module>adapter</module>
+        <module>composite</module>
+        <module>proxy</module>
+        <module>flyweight</module>
+        <module>facade</module>
+        <module>bridge</module>
+        <module>decorator</module>
     </modules>
 
     <properties>
